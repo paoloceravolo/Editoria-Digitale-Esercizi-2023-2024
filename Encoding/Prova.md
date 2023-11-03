@@ -1,0 +1,4 @@
+# Prova
+
+testo di prova salvato in UTF-8
+Mettiamo una lettera accentata à
