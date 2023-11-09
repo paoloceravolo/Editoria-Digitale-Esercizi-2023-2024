@@ -13,30 +13,38 @@ Un filtro in Pandoc è un programma esterno che può essere utilizzato per modif
 Ecco un semplice esempio di filtro Pandoc scritto in Python. In questo esempio, creeremo un filtro per sostituire tutte le istanze della parola "Gatto" con "Cane" in un documento di testo 
 
 ```bash
-#!/usr/bin/env python
-import panflute as pf
+#!/usr/bin/env python3
 
-def replace_text(elem, doc):
-    if isinstance(elem, pf.Str) and elem.text == "the editor":
-        elem.text = "Markdown"
+from panflute import *
 
-if __name__ == "__main__":
-    pf.toJSONFilter(replace_text)
+def action(elem, doc):
+    if isinstance(elem, Header):
+        elem.level = 1
 
+def main(doc=None):
+    return run_filter(action, doc=doc) 
+
+if __name__ == '__main__':
+    main()
 ```
-Salviamo il file come ``replace.py``
+Salviamo il file come ``ToLevel1.py``
 
 Attirbuiamo al file i permessi di esecuzione
 
 ```
-chmod +x replace.py
+chmod +x ToLevel1.py
 ```
 
 Eseguiamo il comando seguente per applicare il filtro:
 
 ```bash
-pandoc input.md --filter ./replace.py -o output.pdf
+pandoc input.md --filter ./ToLevel1.py -o output.pdf
 ```
 
+Per poterlo eseguire è nceessario aver installato Python e la libreria panflute
 
-Per poterlo eseguire è nceessario aver installato Python e 
+```bash
+pip install panflute
+```
+
+Per indicare al OS quale istallazioen di Python eseguire è necessario indicarlo nell'intestazione con ``#!/usr/bin/env python3`` 
