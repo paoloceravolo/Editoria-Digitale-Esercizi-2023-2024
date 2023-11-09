@@ -1,6 +1,6 @@
 # Esercizi avanzati di Pandoc con Soluzioni
 
-Benvenuto a questi esercizi di Pandoc. Scopriremo come utilizzare Pandoc per svolgere diverse trasformazioni sui documenti. Prima di svolgere gli esercizi, assicurati di avere Pandoc installato sul tuo sistema.
+Benvenuto a questi esercizi di Pandoc. Scopriremo come utilizzare Pandoc per svolgere diverse trasformazioni sui documenti. Prima di svolgere gli esercizi, assicurati di avere Pandoc installato sul tuo sistema. Per i filtri Panflute è necessario anche installare Python e la libreria Panflute.
 
 ## Esercizio 1: Usare i filtri
 
@@ -48,3 +48,20 @@ pip install panflute
 ```
 
 Per indicare al OS quale istallazioen di Python eseguire è necessario indicarlo nell'intestazione con ``#!/usr/bin/env python3`` 
+
+## Esercizio 2: Trasformare gli elenchi numerati
+
+**Richiesta:** Rinumerare tutti gli elenchi numerati con numeri romani.
+
+## Esercizio 3: Spostare le tabelle 
+
+**Richiesta:** Spostare le tabelle in un punto del documento cotnrasegnato da una stringsa, ad es. $tables
+
+
+## Esercizio 4: Sostituire i blocchi di codice
+
+**Richiesta:** Sostituire ogni blocco di codice delimitato con la classe dot con un'immagine generata eseguendo dot -Tpng (da graphviz) sul contenuto del blocco di codice.
+
+## Esercizio 5: Eseguire i blocchi di codice
+
+**Richiesta:** Trovare tutti i blocchi di codice con classe python ed eseguirli con l'interprete python, stampando i risultati sulla console.
