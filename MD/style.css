@@ -1,0 +1,41 @@
+/* Stile del corpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+/* Stile dei titoli di primo livello */
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Stile dei titoli di secondo livello */
+h2 {
+    color: #555;
+    font-size: 20px;
+}
+
+/* Stile dei titoli di terzo livello */
+h4 {
+    color: darkred;
+    font-size: 18px;
+}
+
+/* Stile dei paragrafi */
+p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+/* Stile dei collegamenti ipertestuali */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+/* Stile dei collegamenti al passaggio del mouse */
+a:hover {
+    text-decoration: underline;
+}
