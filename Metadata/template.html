@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${title}</title>
+    <meta name="author" content="${author}">
+    <meta name="description" content="${description}">
+    <meta name="keywords" content="${tags}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>${title}</h1>
+        <p>Autore: ${author}</p>
+        <p>Data: ${date}</p>
+        <p>Tags: ${tags}</p>
+    </header>
+    <section>
+        <h2>Introduzione</h2>
+        <p>${description}</p>
+        <p>Questo è un esempio di generazione di un documento HTML utilizzando Pandoc.</p>
+        <h2>Contenuto</h2>
+        <p>Qui puoi inserire il contenuto del tuo documento.</p>
+    </section>
+</body>
+</html>

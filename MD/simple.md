@@ -1,7 +1,7 @@
 ---
 title: Esempio 
 author: ED class
-date: 03 novemebre 2023
+date: /today
 bibliography: ref.bib
 csl: IEEE.csl
 ---

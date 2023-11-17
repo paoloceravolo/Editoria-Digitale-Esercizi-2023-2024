@@ -1,4 +1,6 @@
-
+---
+panflute-verbose: true
+---
 #### Aggioranto il 03/10/2023
 
 # Intro
@@ -36,6 +38,7 @@ Insert citation [@barbon2020evaluating]
 ## What about images?
 ![UNIMI](https://www.erasmusmilan.com/wp-content/uploads/2016/02/Statale-e1478865636847.jpg)
 
+$tables
 
 ***
 

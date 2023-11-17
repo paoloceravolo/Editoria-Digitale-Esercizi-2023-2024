@@ -1,0 +1,7 @@
+{
+  "title": "Esempio di Documento HTML",
+  "author": "Tuo Nome",
+  "date": "2023-11-12",
+  "tags": ["Pandoc", "HTML", "Markdown"],
+  "description": "Un esempio di generazione di documento HTML con Pandoc."
+}

@@ -1,0 +1,32 @@
+{
+  "@context": "http://schema.org/",
+  "\\@type": "Book",
+  "additionalType": "Product",
+  "name": "titolo",
+  "author": "Paolo Ceravolo",
+  "inLanguage": "it",
+  "offers": [
+    {
+      "\\@type": "Offer"
+    },
+    {
+      "availability": "https://unimi.primo.exlibrisgroup.com/permalink/39UMI_INST/i9q3jt/alma991015614449706031"
+    },
+    {
+      "serialNumber": 991015614449706031
+    },
+    {
+      "offeredBy": [
+        {
+          "\\@type": "Library"
+        },
+        {
+          "\\@id": "https://sites.unimi.it/dcb/pub/opac/usm_a5_info.html"
+        },
+        {
+          "name": "Biblioteca Biomedica di Citt\u00e0 Studi"
+        }
+      ]
+    }
+  ]
+}

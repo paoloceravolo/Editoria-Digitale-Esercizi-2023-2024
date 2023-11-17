@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 """
-Appling the filter to renumber the numbered lists with Roman numerals, and save the modified document 
 """
 
 from panflute import *
@@ -9,7 +8,7 @@ from panflute import *
 def table_sort(elem, doc):
     if isinstance(elem, Table):
         # Specify the column number to sort by (zero-based index)
-        column_to_sort = 1  # Change this to the desired column
+        column_to_sort = 2  # Change this to the desired column
         # Specify the sort order ('asc' for ascending, 'desc' for descending)
         sort_order = 'asc'  # Change this as needed
 
@@ -19,17 +18,32 @@ def table_sort(elem, doc):
         # Get the data rows to sort (skip the header row)
         data_rows = elem.content[1:]
 
+         # Convert data_rows from list to TableBody
+        table_body = TableBody(*data_rows)
+
         # Sort the data rows based on the selected column
-        data_rows.sort(key=lambda row: row.content[column_to_sort].text)
+        sorted_rows = sorted(table_body.content, key=lambda row: row.content[column_to_sort].text)
 
         if sort_order == 'desc':
-            data_rows = list(reversed(data_rows))
+            sorted_rows = list(reversed(sorted_rows))
+
 
         # Reconstruct the table with the sorted data rows
-        sorted_table = [header_row] + data_rows
+        #sorted_table = [header_row] + data_rows
 
+        #head = TableHead(header_row)
+        #rows = TableRow(data_rows)
+        #body = TableBody(rows)
+        caption = 'sorted table'
+        #sorted_table = Table(data_rows, head=header_row, caption=caption)
+        # Reconstruct the table with the sorted data rows
+        sorted_table = Table(*[header_row, TableBody(*sorted_rows)])
         # Return the sorted table
-        return Div(*sorted_table)
+        return sorted_table
+
+        #div = Div(*sorted_table)
+        #div = div.append(*sorted_table)
+        #return div
 
 def main(doc=None):
     return run_filter(table_sort, doc=doc)
