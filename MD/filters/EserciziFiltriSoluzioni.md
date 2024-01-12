@@ -41,13 +41,13 @@ Eseguiamo il comando seguente per applicare il filtro:
 pandoc input.md --filter ./ToLevel1.py -o output.pdf
 ```
 
-Per poterlo eseguire è nceessario aver installato Python e la libreria panflute
+Per poterlo eseguire è necessario aver installato Python e la libreria panflute
 
 ```bash
 pip install panflute
 ```
 
-Per indicare al OS quale istallazioen di Python eseguire è necessario indicarlo nell'intestazione con ``#!/usr/bin/env python3`` 
+Per indicare al OS quale istallazione di Python eseguire è necessario indicarlo nell'intestazione con ``#!/usr/bin/env python3`` 
 
 ## Esercizio 2: Trasformare gli elenchi numerati
 
@@ -55,7 +55,7 @@ Per indicare al OS quale istallazioen di Python eseguire è necessario indicarlo
 
 ## Esercizio 3: Spostare le tabelle 
 
-**Richiesta:** Spostare le tabelle in un punto del documento cotnrasegnato da una stringsa, ad es. $tables
+**Richiesta:** Spostare le tabelle in un punto del documento contrassegnato da una stringa, ad es. $tables
 
 
 ## Esercizio 4: Sostituire i blocchi di codice

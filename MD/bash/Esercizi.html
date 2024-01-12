@@ -1,0 +1,68 @@
+<h1
+id="esercizi-automatizzare-le-trasformazioni-pandoc-da-shell">Esercizi:
+automatizzare le trasformazioni Pandoc da Shell</h1>
+<p>A set of five exercises that progressively introduce to Bash
+scripting for automating Pandoc transformations. Each exercise builds on
+the previous one, gradually increasing in complexity.</p>
+<h2 id="exercise-1-basic-conversion">Exercise 1: Basic Conversion</h2>
+<h3 id="assignment">Assignment:</h3>
+<p>Write a Bash script named <em>convert_to_html.sh</em> that converts a
+single Markdown file to HTML using Pandoc. Ensure that the output HTML
+file is named output.html.</p>
+<h3 id="hints">Hints:</h3>
+<ul>
+<li>Use a variable to store the Pandoc command with appropriate
+options.</li>
+<li>Specify the input and output file paths in the script.</li>
+</ul>
+<h2 id="exercise-2-batch-conversion">Exercise 2: Batch Conversion</h2>
+<h3 id="assignment-1">Assignment:</h3>
+<p>Extend the script from Exercise 1 to perform batch conversion for all
+Markdown files in the markdown_files directory. Output the HTML files to
+a new directory named html_output.</p>
+<h3 id="hints-1">Hints:</h3>
+<ul>
+<li>Use a for loop to iterate over all Markdown files in the
+directory.</li>
+<li>Create the <code>html_output</code> directory if it doesn’t
+exist.</li>
+</ul>
+<h2 id="exercise-3-customizing-conversion-options">Exercise 3:
+Customizing Conversion Options</h2>
+<h3 id="assignment-2">Assignment:</h3>
+<p>Modify the script from Exercise 2 to allow users to customize the
+Pandoc options. Prompt the user to input the desired options (e.g.,
+<code>--toc</code> for table of contents).</p>
+<h3 id="hints-2">Hints:</h3>
+<ul>
+<li>Use the read command to get user input.</li>
+<li>Include the user-specified options in the Pandoc command.</li>
+</ul>
+<h2 id="exercise-4-handling-input-directories">Exercise 4: Handling
+Input Directories</h2>
+<h3 id="assignment-3">Assignment:</h3>
+<p>Enhance the script from Exercise 3 to accept the input directory as a
+command-line argument. If no argument is provided, default to the
+current directory.</p>
+<h3 id="hints-3">Hints:</h3>
+<ul>
+<li>Use <code>$1</code> to access the first command-line argument.</li>
+<li>Use a default value if no argument is provided.</li>
+</ul>
+<h2 id="exercise-5-advanced-conversion">Exercise 5: Advanced
+Conversion</h2>
+<h3 id="assignment-4">Assignment:</h3>
+<p>Create a script named <em>advanced_converter.sh</em> that performs
+the following:</p>
+<p>Converts all Markdown files in the content directory to HTML with
+Pandoc. Inserts a custom CSS file (styles.css) for styling. Uses a
+template file (template.html) for the HTML output.</p>
+<h3 id="hints-4">Hints:</h3>
+<ul>
+<li>Consider using the <code>--css</code> and <code>--template</code>
+options in the Pandoc command.</li>
+<li>Make sure to handle the existence of the CSS and template
+files.</li>
+</ul>
+<p>You can extend these scripts, exploring additional Pandoc options and
+Bash scripting techniques.</p>

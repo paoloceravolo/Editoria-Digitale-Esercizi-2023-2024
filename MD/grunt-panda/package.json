@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-panda": "^0.1.7"
+  }
+}

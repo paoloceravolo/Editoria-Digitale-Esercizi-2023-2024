@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+title: Esempio 
+author: 
+  Paolo Ceravolo
+#  - Paolo Ceravolo 
+#  - ED Class
+date: 03 novemebre 2023
+bibliography: ref.bib
+csl: IEEE.csl
