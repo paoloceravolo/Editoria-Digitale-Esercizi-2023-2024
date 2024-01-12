@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="urn:uuid:c913985a-5ec8-4183-a88a-d1318d343d59" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+  <docTitle>
+    <text>Prova</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-0">
+      <navLabel>
+        <text>Prova</text>
+      </navLabel>
+      <content src="text/title_page.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-1">
+      <navLabel>
+        <text>Introduction</text>
+      </navLabel>
+      <content src="text/ch001.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-2">
+      <navLabel>
+        <text>Python</text>
+      </navLabel>
+      <content src="text/ch002.xhtml" />
+      <navPoint id="navPoint-3">
+        <navLabel>
+          <text>Example</text>
+        </navLabel>
+        <content src="text/ch002.xhtml#example" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-4">
+      <navLabel>
+        <text>Ruby</text>
+      </navLabel>
+      <content src="text/ch003.xhtml" />
+      <navPoint id="navPoint-5">
+        <navLabel>
+          <text>Example</text>
+        </navLabel>
+        <content src="text/ch003.xhtml#example-1" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-6">
+      <navLabel>
+        <text>CLI</text>
+      </navLabel>
+      <content src="text/ch004.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-7">
+      <navLabel>
+        <text>Conclusion</text>
+      </navLabel>
+      <content src="text/ch005.xhtml" />
+      <navPoint id="navPoint-8">
+        <navLabel>
+          <text>GitHub Flavored Markdown (GFM) specific syntax</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#github-flavored-markdown-gfm-specific-syntax" />
+        <navPoint id="navPoint-9">
+          <navLabel>
+            <text>check box</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#check-box" />
+        </navPoint>
+        <navPoint id="navPoint-10">
+          <navLabel>
+            <text>tables</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#tables" />
+        </navPoint>
+        <navPoint id="navPoint-11">
+          <navLabel>
+            <text>Code Blocks with Language Specifier</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#code-blocks-with-language-specifier" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
